@@ -19,10 +19,13 @@ I welcome all contributions, including bug reports, feature requests, documentat
 ## How to Contribute ✨
 
 1. **Fork** this repository.
-2. **Create a feature branch** for your changes (`git checkout -b <issue-number>-<short-description>`).
+2. **Create a feature branch** for your changes (`git checkout -b <type>/<issue-number>-<short-description>`), where:
+   1. `type` is the nature of work (`feature`, `fix`, `chore`, `docs`, `refactor` or `test`)
+   2. `issue-number`: ID of the GitHue issue, if relevant otherwise not omitted
+   3. `short-description`: a few words describing the branch in kebab-case (lowercase with hyphens)
 3. **Make your changes** following the project style and guidelines.
 4. **Commit** your changes with a clear message (`git commit -m "Brief description of changes"`).
-5. **Push** to your fork (`git push origin <issue-number>-<short-description>`).
+5. **Push** to your fork (`git push origin <type>/<issue-number>-<short-description>`).
 6. **Open a Pull Request** and briefly describe your changes.
 
 Please make sure your code is clean and tested before submitting.
