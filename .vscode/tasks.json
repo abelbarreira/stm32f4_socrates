@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Setup Install Ubuntu",
+      "type": "shell",
+      "command": "./scripts/setup_install_ubuntu.sh",
+    }
+  ]
+}
