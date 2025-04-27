@@ -1,6 +1,33 @@
 # STM32F4 Socrates
 
 ![C++](https://img.shields.io/badge/C%2B%2B-11%2F14%2F17%2F20%2F23-blue)
+[![Python](https://img.shields.io/badge/python-3.10.12-yellow)](https://www.python.org/downloads/release/python-31012/)
 ![License](https://img.shields.io/github/license/abelbarreira/CppProjectTemplate)
+[![Pull Requests Welcome](https://img.shields.io/badge/pull%20requests-welcome-brightgreen.svg)](https://github.com/python/typeshed/blob/main/CONTRIBUTING.md)
 
-Command Processor on STM32F4 family.
+<br />
+<p align="center">
+  <img src="docs/socrates.jpg" alt="Socrates" width="50">
+</p>
+
+## About The Project
+
+Socrates (469–399 BC) spent most of his life dialoguing with people in the streets and public squares of the city. *Trees won't teach me anything*, he once said. He and his conversation partners explored subjects through a process of **Question** and **Answer**; a technique now known as **Socratic Method**.
+
+In another moment, upon seeing a vast array of goods for sale, Socrates remarked, *How many things I can do without!*.
+
+STM32F4 Socrates Project applies this Socratic approach to implement a **Command Processor** for the STM32F4 family. It follows the principles of the Socratic Method within a simplified environment using a minimal set of tools.
+
+## Contributing
+
+If you have suggestions for how Open Source Projects Template could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
+
+For more, check out the Contributing Guide.
+
+## License
+
+MIT License
+
+Copyright (c) 2025 abelbarreira
+
+For more, check out the [License File](LICENSE).
