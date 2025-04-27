@@ -19,10 +19,10 @@ I welcome all contributions, including bug reports, feature requests, documentat
 ## How to Contribute ✨
 
 1. **Fork** this repository.
-2. **Create a branch** for your changes (`git checkout -b feature/your-branch-name`).
+2. **Create a feature branch** for your changes (`git checkout -b <issue-number>-<short-description>`).
 3. **Make your changes** following the project style and guidelines.
 4. **Commit** your changes with a clear message (`git commit -m "Brief description of changes"`).
-5. **Push** to your fork (`git push origin feature/your-branch-name`).
+5. **Push** to your fork (`git push origin <issue-number>-<short-description>`).
 6. **Open a Pull Request** and briefly describe your changes.
 
 Please make sure your code is clean and tested before submitting.
