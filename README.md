@@ -18,6 +18,10 @@ In another moment, upon seeing a vast array of goods for sale, Socrates remarked
 
 STM32F4 Socrates Project applies this Socratic approach to implement a **Command Processor** for the STM32F4 family. It follows the principles of the Socratic Method within a simplified environment using a minimal set of tools.
 
+## Documentation
+
+Refer to [SUMMARY](docs/SUMMARY.md).
+
 ## Contributing
 
 If you have suggestions for how Open Source Projects Template could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
