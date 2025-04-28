@@ -12,7 +12,4 @@
       // "GIO_MODULE_DIR": null,
     }
   },
-  "C_Cpp.clang_format_fallbackStyle": "LLVM",
-  "C_Cpp.clang_format_sortIncludes": false,
-  "C_Cpp.formatting": "disabled"
 }
