@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "stm32f4_socrates",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": []
+        }
+    ],
+    "version": 4
+}
