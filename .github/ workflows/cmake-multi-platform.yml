@@ -72,10 +72,10 @@ jobs:
         run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config ${{ matrix.build_type }}
 
       - name: Find and run executable
-        run: |
-          exe=$(Get-ChildItem -Recurse -Filter "main_app.exe" | Select-Object -First 1).FullName
-          & $exe
         shell: pwsh
+        run: |
+          $exe = Get-ChildItem -Recurse -Filter "main_app.exe" | Select-Object -First 1
+          & $exe.FullName
 
       # - name: Run
       #   working-directory: ${{ steps.strings.outputs.build-output-dir }}/Release
