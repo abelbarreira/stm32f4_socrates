@@ -10,6 +10,7 @@
     "terminal.integrated.env.linux": {
       "GTK_PATH": null,
       // "GIO_MODULE_DIR": null,
-    }
+    },
+    "cmake.options.statusBarVisibility": "visible"
   },
 }
