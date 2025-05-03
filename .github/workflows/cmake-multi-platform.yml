@@ -3,9 +3,9 @@
 name: CMake on multiple platforms
 
 on:
-  workflow_dispatch:
-  # push:
-  #   branches: ["main"]
+  # workflow_dispatch:
+  push:
+    branches: ["feature/6-cmake-based-multi-platform-projects"]
   # pull_request:
   #   branches: ["main"]
 
