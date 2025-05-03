@@ -18,15 +18,15 @@ function(apply_compiler_settings target options)
   # Use build-type-specific flags
   target_compile_options(${target} ${options}
     # GNU: GCC, Clang (on Linux, macOS, or MinGW on Windows)
-    $<$<AND:$<CXX_COMPILER_ID:GNU>,$<CONFIG:Debug>>:-Wall -Wextra -Wpedantic -g -O0>
-    $<$<AND:$<CXX_COMPILER_ID:GNU>,$<CONFIG:MinSizeRel>>:-DNDEBUG -Os>
-    $<$<AND:$<CXX_COMPILER_ID:GNU>,$<CONFIG:RelWithDebInfo>>:-DNDEBUG -g -O2>
-    $<$<AND:$<CXX_COMPILER_ID:GNU>,$<CONFIG:Release>>:-DNDEBUG -flto -O3>
+    $<$<AND:$<CXX_COMPILER_ID:GNU>,$<CONFIG:Debug>>:-DBUILD_TYPE_DEBUG -Wall -Wextra -Wpedantic -g -O0>
+    $<$<AND:$<CXX_COMPILER_ID:GNU>,$<CONFIG:MinSizeRel>>:-DBUILD_TYPE_MINSIZEREL -DNDEBUG -Os>
+    $<$<AND:$<CXX_COMPILER_ID:GNU>,$<CONFIG:RelWithDebInfo>>:-DBUILD_TYPE_RELWITHDEBINFO -DNDEBUG -g -O2>
+    $<$<AND:$<CXX_COMPILER_ID:GNU>,$<CONFIG:Release>>:-DBUILD_TYPE_RELEASE -DNDEBUG -flto -O3>
     # MSVC:  Microsoft Visual Studio MSVC compiler (on Windows)
-    $<$<AND:$<CXX_COMPILER_ID:MSVC>,$<CONFIG:Debug>>:/W4 /Zi /Od>
-    $<$<AND:$<CXX_COMPILER_ID:MSVC>,$<CONFIG:MinSizeRel>>:/DNDEBUG /O1>
-    $<$<AND:$<CXX_COMPILER_ID:MSVC>,$<CONFIG:RelWithDebInfo>>:/DNDEBUG /Zi /O2>
-    $<$<AND:$<CXX_COMPILER_ID:MSVC>,$<CONFIG:Release>>:/DNDEBUG /GL /LTCG /O2>
+    $<$<AND:$<CXX_COMPILER_ID:MSVC>,$<CONFIG:Debug>>:/DBUILD_TYPE_DEBUG /W4 /Zi /Od>
+    $<$<AND:$<CXX_COMPILER_ID:MSVC>,$<CONFIG:MinSizeRel>>:/DBUILD_TYPE_MINSIZEREL /DNDEBUG /O1 BUILD_TYPE_MINSIZEREL>
+    $<$<AND:$<CXX_COMPILER_ID:MSVC>,$<CONFIG:RelWithDebInfo>>:/DBUILD_TYPE_RELWITHDEBINFO /DNDEBUG /Zi /O2 BUILD_TYPE_RELWITHDEBINFO>
+    $<$<AND:$<CXX_COMPILER_ID:MSVC>,$<CONFIG:Release>>:/DBUILD_TYPE_RELEASE /DNDEBUG /GL /LTCG /O2>
   )
 endfunction()
 # cmake-format: on

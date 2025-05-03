@@ -17,5 +17,17 @@ int main() {
   // Use module_c
   module_c::module_c_funct(mod_a_len);
 
+#if defined(BUILD_TYPE_DEBUG)
+  std::cout << "Debug build" << std::endl;
+#elif defined(BUILD_TYPE_RELEASE)
+  std::cout << "Release build" << std::endl;
+#elif defined(BUILD_TYPE_RELWITHDEBINFO)
+  std::cout << "RelWithDebInfo build" << std::endl;
+#elif defined(BUILD_TYPE_MINSIZEREL)
+  std::cout << "MinSizeRel build" << std::endl;
+#else
+  std::cout << "Unknown build type" << std::endl;
+#endif
+
   return 0;
 }
