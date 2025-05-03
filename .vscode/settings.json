@@ -1,0 +1,6 @@
+{
+    "cmake.automaticReconfigure": false,
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+    "cmake.options.statusBarVisibility": "visible",
+}
