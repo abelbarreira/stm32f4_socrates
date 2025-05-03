@@ -1,13 +1,19 @@
 message(STATUS "CompilerSettings: Build type: ${CMAKE_BUILD_TYPE}")
 
-if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
-  message(STATUS "CompilerSettings: MSVC compiler detected")
-elseif(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-  message(STATUS "CompilerSettings: GCC/Clang compiler detected")
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    # GNU: GCC, Clang (on Linux, macOS, or MinGW on Windows)
+    message(STATUS "CompilerSettings: GCC/Clang compiler detected")
+elseif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+    # MSVC:  Microsoft Visual Studio MSVC compiler (on Windows)
+    message(STATUS "CompilerSettings: MSVC compiler detected")
 else()
-  message(FATAL_ERROR "CompilerSettings: Unknown compiler detected: ${CMAKE_CXX_COMPILER_ID}")
+    message(
+        FATAL_ERROR
+            "CompilerSettings: Unknown compiler detected: ${CMAKE_CXX_COMPILER_ID}"
+    )
 endif()
 
+# cmake-format: off
 function(apply_compiler_settings target options)
   # Use build-type-specific flags
   target_compile_options(${target} ${options}
@@ -23,3 +29,4 @@ function(apply_compiler_settings target options)
     $<$<AND:$<CXX_COMPILER_ID:MSVC>,$<CONFIG:Release>>:/DNDEBUG /GL /LTCG /O2>
   )
 endfunction()
+# cmake-format: on

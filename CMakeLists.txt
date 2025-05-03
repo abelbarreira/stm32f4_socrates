@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.22)
 
 # Project name and version
 project(
-  "stm32f4_socrates"
-  VERSION 1.0.0
-  LANGUAGES C CXX)
+    "stm32f4_socrates"
+    VERSION 1.0.0
+    LANGUAGES C CXX)
 
 # CMake configuration
 set(CMAKE_CXX_STANDARD 20)
