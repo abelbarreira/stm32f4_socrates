@@ -12,3 +12,4 @@
   - Command Palette > CMake > Select a Kit > `Visual Studio Community 2022 Release - x86`
 - GitHub Pages:
   - Create a branch `gh-pages` and activate GitHub pages in Settings from GitHub
+  - Set Read and Write permissions in `Settings -> Actions -> General -> Workflow permissions`

@@ -8,3 +8,4 @@
   - Using `Unix Makefiles` generator
 - GitHub Pages:
   - Create a branch `gh-pages` and activate GitHub pages in Settings from GitHub
+  - Set Read and Write permissions in `Settings -> Actions -> General -> Workflow permissions`

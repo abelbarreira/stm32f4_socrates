@@ -4,7 +4,8 @@
  * \brief Main entry point for the application
  *
  * \details This file contains the main function that serves as the entry point
- * for the application
+ * for the application. It includes the necessary headers and uses the functions
+ * from the modules defined in the project.
  */
 #include <iostream>
 
