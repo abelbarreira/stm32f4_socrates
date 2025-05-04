@@ -12,5 +12,7 @@
 - Formatters:
   - Clang-Format
   - Cmake-Format
-- Doxygen and Dependency Graph Generation
+- Doxygen:
+  - Using a CMake custom target
+- Dependency Graph Generation
 - GitHub Workflows using GitHub Actions for configure, build and run the CMake project
