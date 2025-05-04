@@ -20,7 +20,7 @@ STM32F4 Socrates Project applies this Socratic approach to implement a **Command
 
 ## Documentation
 
-Refer to [SUMMARY](docs/SUMMARY.md).
+Refer to [SUMMARY](docs/book/SUMMARY.md).
 
 ## Contributing
 
