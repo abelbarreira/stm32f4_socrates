@@ -13,7 +13,7 @@
   - Clang-Format
   - Cmake-Format
 - Doxygen:
-  - Using a CMake custom target
-  - Using GitHub Workflow and GitHub Actions to publish it in the project GitHub Pages:
+  - With a CMake custom target
+  - With GitHub Workflow and GitHub Actions to publish it in the project GitHub Pages
 - Dependency Graph Generation
 - GitHub Workflows using GitHub Actions for configure, build and run the CMake project

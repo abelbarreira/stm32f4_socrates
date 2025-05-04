@@ -1,10 +1,11 @@
+# Generate Doxygen documentation using CMake targe and publish it to GitHub Pages
 name: Doxygen Documentation
 
 on:
   push:
-    tags:
-      - "*"
-    branches: [feature/8-cmake-dependency-graph-doxygen]
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 permissions:
   contents: write
