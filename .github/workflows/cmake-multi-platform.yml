@@ -62,6 +62,12 @@ jobs:
         # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
         run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config ${{ matrix.build_type }}
 
-      - name: Run
+      - name: Run (Windows)
         # Run the program. Note that the executable name is the same as the project name.
+        if: ${{ matrix.os == 'windows-latest' }} # Only runs on Windows
         run: ${{ steps.strings.outputs.build-output-dir }}/app/${{ matrix.build_type }}/main_app.exe
+
+      - name: Run (Ubuntu)
+        # Run the program. Note that the executable name is the same as the project name.
+        if: ${{ matrix.os == 'ubuntu-latest' }} # Only runs on Ubuntu
+        run: ${{ steps.strings.outputs.build-output-dir }}/app/main_app
