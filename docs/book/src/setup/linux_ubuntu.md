@@ -6,3 +6,5 @@
   - Command Palette > CMake > Select a Kit > `GCC 11.4.0 x86_64-linux-gnu`
 - CMake:
   - Using `Unix Makefiles` generator
+- GitHub Pages:
+  - Create a branch `gh-pages` and activate GitHub pages in Settings from GitHub
