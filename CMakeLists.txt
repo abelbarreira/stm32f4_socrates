@@ -17,7 +17,6 @@ set(TARGET_MAIN_APP main_app)
 set(TARGET_MODULE_A module_a)
 set(TARGET_MODULE_B module_b)
 set(TARGET_MODULE_C module_c)
-set(TARGET_DOXYGEN_DOCS doxygen_docs)
 
 # CMake modules path
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
