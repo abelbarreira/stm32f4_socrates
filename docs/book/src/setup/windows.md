@@ -3,6 +3,7 @@
 - Install:
   - [Git](https://git-scm.com/downloads)
     - `../../../../tools/windows/git/.bashrc` as reference
+  - Make
   - CMake
   - Microsoft Visual Studio 2022
   - [doxygen](https://www.doxygen.nl/download.html)
