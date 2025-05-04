@@ -7,7 +7,7 @@
 
 <br />
 <p align="center">
-  <img src="docs/socrates.jpg" alt="Socrates" width="50">
+  <img src="docs/images/socrates_small.jpg" alt="Socrates" width="50">
 </p>
 
 ## About The Project
@@ -20,7 +20,7 @@ STM32F4 Socrates Project applies this Socratic approach to implement a **Command
 
 ## Documentation
 
-Refer to [SUMMARY](docs/SUMMARY.md).
+Refer to [SUMMARY](docs/book/SUMMARY.md).
 
 ## Contributing
 

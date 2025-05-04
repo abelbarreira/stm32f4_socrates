@@ -1,9 +1,23 @@
+/**
+ * \file main.cc
+ *
+ * \brief Main entry point for the application
+ *
+ * \details This file contains the main function that serves as the entry point
+ * for the application. It includes the necessary headers and uses the functions
+ * from the modules defined in the project.
+ */
 #include <iostream>
 
 #include "module_a.hpp"
 #include "module_b.hpp"
 #include "module_c.hpp"
 
+/**
+ * \file main.cc
+ *
+ * \brief Main entry point for the application
+ */
 int main() {
   std::cout << "Hello World!" << std::endl;
 
