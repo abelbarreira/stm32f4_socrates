@@ -7,7 +7,7 @@
 
 <br />
 <p align="center">
-  <img src="docs/socrates.jpg" alt="Socrates" width="50">
+  <img src="docs/images/socrates_small.jpg" alt="Socrates" width="50">
 </p>
 
 ## About The Project
