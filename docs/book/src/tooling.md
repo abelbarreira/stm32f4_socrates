@@ -15,5 +15,6 @@
 - Doxygen:
   - With a CMake custom target
   - With GitHub Workflow and GitHub Actions to publish it in the project GitHub Pages
-- Dependency Graph Generation
+- Dependency Graph Generation:
+  - With a CMake custom target
 - GitHub Workflows using GitHub Actions for configure, build and run the CMake project
