@@ -34,6 +34,10 @@ jobs:
       - name: Build
         # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
         run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config Release
+
+      - name: Run
+        # Run the program. Note that the executable name is the same as the project name.
+        run: ${{ steps.strings.outputs.build-output-dir }}/app/Release/main_app.exe
 #      - name: Test
 #        working-directory: ${{ steps.strings.outputs.build-output-dir }}
 #        # Execute tests defined by the CMake configuration. Note that --build-config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
