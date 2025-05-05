@@ -2,8 +2,8 @@
 name: Doxygen Documentation
 
 on:
-  push:
-    branches: [feature/11-githug-pages-update]
+#  push:
+#    branches: [main]
   pull_request:
     branches: [main]
 
