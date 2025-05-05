@@ -2,23 +2,27 @@
 name: Doxygen Documentation
 
 on:
-  # push:
-  #   branches: [main]
-  pull_request:
-    branches: [main]
+   push:
+     branches: [feature/11-githug-pages-update]
+#  pull_request:
+#    branches: [main]
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build:
     name: Build and publish documentation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
       - name: Install
         run: |
           sudo apt-get install doxygen graphviz
@@ -29,9 +33,19 @@ jobs:
       - name: Build
         run: |
           cmake --build build --config Release --target doxygen_docs -j4
-      - name: Deploy to GitHub Pages
-        uses: Cecilapp/GitHub-Pages-deploy@v3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          build_dir: ./docs/html
+          path: ./docs/html
+
+deploy:
+  needs: build
+  runs-on: ubuntu-latest
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+
+  steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4

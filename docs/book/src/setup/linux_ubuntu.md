@@ -7,5 +7,5 @@
 - CMake:
   - Using `Unix Makefiles` generator
 - GitHub Pages:
-  - Create a branch `gh-pages` and activate GitHub pages in Settings from GitHub
+  - Set `GitHb Actions` in `Settings -> Page -> Build and Deployment -> Source`
   - Set Read and Write permissions in `Settings -> Actions -> General -> Workflow permissions`
