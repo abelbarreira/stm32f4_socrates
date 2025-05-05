@@ -14,3 +14,5 @@
 - GitHub Pages:
   - Set `GitHb Actions` in `Settings -> Page -> Build and Deployment -> Source`
   - Set Read and Write permissions in `Settings -> Actions -> General -> Workflow permissions`
+  - Allow Your Branch to Deploy to the Environment: `Settings -> Environments -> Deployment branches and tags -> Add your branch` and save
+
