@@ -12,5 +12,6 @@
 - Visual Studio Code with `../../tools/windows/vscode/stm32f4_socrates_win.code-profile`:
   - Command Palette > CMake > Select a Kit > `Visual Studio Community 2022 Release - x86`
 - GitHub Pages:
-  - Create a branch `gh-pages` and activate GitHub pages in Settings from GitHub
+  - Set `GitHb Actions` in `Settings -> Page -> Build and Deployment -> Source`
   - Set Read and Write permissions in `Settings -> Actions -> General -> Workflow permissions`
+  - Allow Your Branch to Deploy to the Environment: `Settings -> Environments -> Deployment branches and tags -> Add your branch` and save
