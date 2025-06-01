@@ -2,4 +2,7 @@
     "cmake.automaticReconfigure": false,
     "cmake.configureOnOpen": false,
     "cmake.configureOnEdit": false,
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
 }
