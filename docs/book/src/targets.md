@@ -1,6 +1,6 @@
 # Targets
 
-In addition to STM32F4, this project is considering **SecurCore® SC000™** and **SecurCore® SC300™** targets during the toolchain and building environment definition. The reason is that SecurCore® is using ARM Compiler 5.x from Keil MDK-ARM so it is a very hardware-specific and security-sensitive toolchain. This is adding a good example of how to give more flexibility to the building environment.
+In addition to STM32F4, this project is considering **SecurCore® SC000™** and **SecurCore® SC300™** targets during the toolchain and building environment definition. The reason is that SecurCore® is using ARM Compiler 5.x from Keil MDK-ARM. Since it is a very hardware-specific and security-sensitive toolchain, this is adding a good example of how to give more flexibility to the building environment.
 
 ## Cross-Platform
 
