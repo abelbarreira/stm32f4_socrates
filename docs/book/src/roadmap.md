@@ -1,9 +1,5 @@
 # 🚀 Project Roadmap
 
-## Q2 2025
-
-
-
 ## Q3 2025
 
 - [ ] Command Processor Python tool for HAL Simulator
