@@ -1,8 +1,8 @@
 # STM32F4 Socrates
 
-![C++](https://img.shields.io/badge/C%2B%2B-11%2F14%2F17%2F20%2F23-blue)
+[![C++](https://img.shields.io/badge/C%2B%2B-11%2F14%2F17%2F20%2F23-blue)](https://en.cppreference.com/index.html)
 [![Python](https://img.shields.io/badge/python-3.10-yellow)](https://www.python.org/downloads/release/python-31012/)
-![License](https://github.com/abelbarreira/stm32f4_socrates/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/abelbarreira/CppProjectTemplate)](https://github.com/abelbarreira/stm32f4_socrates/blob/main/LICENSE)
 [![Pull Requests Welcome](https://img.shields.io/badge/pull%20requests-welcome-brightgreen.svg)](https://github.com/abelbarreira/stm32f4_socrates/blob/main/.github/CONTRIBUTING.md)
 
 <br />
